@@ -7,11 +7,11 @@ Usage: #definition
 * extension[=].valueCode = #normative
 * extension[+].url = "http://hl7.org/fhir/build/StructureDefinition/path"
 * extension[=].valueString = "Bundle.entry(0).resource"
-* url = "http://hl7.org/fhir/build/SearchParameter/Bundle-composition"
-* name = "Search Composition in Bundle"
+* url = "http://hl7.org/fhir/build/SearchParameter/Bundle-list"
+* name = "Search List in Bundle"
 * status = #active
-* description = "The first resource in the bundle, if the bundle type is \"document\" - this is a composition, and this parameter provides access to search its contents"
-* code = #composition
+* description = "The first resource in the bundle, if the bundle type is \"document\" - this is a list, and this parameter provides access to search its contents"
+* code = #list
 * base = #Bundle
 * type = #reference
-* expression = "Bundle.entry[0].resource as Composition"
+* expression = "Bundle.entry[0].resource as List"
